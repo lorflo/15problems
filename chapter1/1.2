@@ -1,1 +1,29 @@
+I: Determine if one string contains the same characters the same number of times as another 
+string, if so then they are permutations of one another.
+
+D: My goal is to take a string, divide it up into its characters, and compare another string
+to those characters, returning a boolean statement.
+
+E,A: Duke 7 steps
+1.String "and" <------> string "dan" are permutations
+String "an" <---x---> "am" are not permutations
+String "and" <---x---> "annd" are not permutations
+
+2.I can see that "and" and "dan" contain the same letters the same number of times so i know 
+they are permutations, but "an" and "am" are off by one letter so they are not permutations, 
+just like "and" and "annd".
+
+3.Patterns: will have to check the characters of the strings, can use an array , but also the 
+length immedeatly tells if they are permutations.
+
+4.First compare lengths. If different, then not permutations. Next put characters of one string 
+into an array and sort it.then do the same to the other string. and compare the elements of the strings.
+
+5.code in file
+
+6.null String(s), empty Strings, Strings with spaces.
+
+7.For null strings will have to throw or cathch an exception.
+
+L: I learned that sorting arrays can be useful.
 
