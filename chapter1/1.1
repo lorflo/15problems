@@ -1,1 +1,28 @@
+I-Determine if a String has only different characters.
+
+D-The goal is to return a boolean value if the string has any characters that repeat.
+
+E/A- Duke 7 steps
+1. A small inastance would be the string "aa". Putting it in the set would only put 'a'. 
+So the length of the string and size of set would be different resulting in false. If the 
+string were "ab", or"a ", the method would return true.
+
+2.I made a Hashset because it doesn't allow for duplicates in the set. Then i put the string 
+character by character into the set. Compare the size of the set to the length of the string.
+
+3. A pattern here is its good to use a hashset when you want to get rid of duplicate values.
+
+4. Trace: String "aa" ---> 'a','a'. characters passed into set. set contains('a'). 
+string length is 2. set size is 1. compare the two values and see they are different.
+return false ti indicate the string is not made up of only unique values.
+
+5.code in file
+
+6.Test cases: an empty string, string with spaces and letters, String with only one character,
+null String. 
+
+7.If you pass a null String you will get a null pointer exception, so you have to throw an 
+exception or check if string is null before hand.
+
+L: I learned that a HashSet is good to use when you want to get rid of duplicate values of data.
 
