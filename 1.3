@@ -1,11 +1,41 @@
-I: Re-state the problem with your own words
-D: Define your goals;state the formatof your solution
+I: Write a method to replace all the spaces in a string with %20 instead.
+
+D: Goal is to take a string break it in to its characters and replace the spaces with 
+%20 symbol.
+
 E,A: Duke 7 steps
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-L: Reflect on the whole problem-solving process you went though, and state what you learned
+1.string "a " will become "a%20"
+String "a s" will become "a%20s"
+
+2.I took the string "a " and broke it down to its characters. the i replaced the spaces with %20. 
+then i combined the charactersback into a string in the same order.
+
+3.Patterns: breaking down string into characters.
+
+4.String "a "----> 'a', ' '----> 'a','%20'----->"a%20"
+
+5.public StringBuilder problem3(String s)
+{
+ String[] chars = new String[s.length()];
+ StringBuilder builder = new StringBuilder();
+ 
+ for(int i =0;i<s.length();i++)
+ {
+ if(s.charAt(i) == ' ')
+ {
+ chars[i] = "%20";
+ builder.append(chars[i]);
+ }
+ else
+ {
+ builder.append(s.charAt(i));
+ }
+ }
+ return builder;
+}
+
+6.null String, empty string.
+
+7.Will have to catch or throw exception for null, and return an error message for an empty string
+
+L: I learned that you can use a stringBuilder to concatinate strings into one object.
