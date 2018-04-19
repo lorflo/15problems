@@ -1,12 +1,22 @@
-I: dived a list at a certain node so that all nodes less than it are put before it, and all nodes greater than or equal to it.
-D: Define your goals;state the formatof your solution
+I: dived a list at a certain node so that all nodes less than it are put before it and all nodes greater than or equal to it.
+
+D: Goal is to have two seperate arrays for before and after the node to partition, then merge the two.
+
 E,A: Duke 7 steps
-1.
-2.
-3.
-4.
-5.
+1.3->5->8->5->10->2->1[partition = 5] -----> 3->1->2->10->5->5->8
+
+2.find all values before the partition where ever it appears, then put them in a list.
+put the rest into another list and merge the two.
+
+3.Patterns: 
+
+4.list(3,5,8,5,10,2,1) -----> listbefore(3,2,1) and listafter(5,5,8,10)
+merge -----> listfinal(3,2,1,5,5,8,10)
+
+5.code: couldnt figure out solution is from book.
+
 6.
 7.
-L: Reflect on the whole problem-solving process you went though, and state what you learned
+
+L: 
 
