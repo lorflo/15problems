@@ -1,0 +1,23 @@
+I: Create stack that is ordered with the larger items on top.
+
+D: Goal is to end up with a sorted stack
+
+E,A: Duke 7 steps
+1.stack(2,3,1,5,8,6,7)------> newStack(1,2,3,5,6,7,8)
+
+2. pop top into a new stack ,then peek and compare the two. if peek is smaller switch the two.
+repeat until the new stack is sorted from smallest to biggest.
+
+3.Pattern:
+
+4. stack(2,3,1,5,8,6,7) --> newStack(7),stack(2,3,1,5,8,6)----> compare 6,7 
+---> newStack(6),stack(2,3,1,5,8,7).....newStack(6,7,5,1,3,2,8)
+
+5.code in file
+
+6.null stack, empty stack
+
+7.throw or catch exception for null
+
+L: how to use two stacks in a recursive method to generate a sorted stack
+
