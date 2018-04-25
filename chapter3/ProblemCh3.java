@@ -19,14 +19,14 @@ public class ProblemCh3
     
   }
   //Min method for a custom stack assuming rest of stack class is made
-  /**
+  
   public static void problem2(Stack stack)
   {
     if(newTop < stack.peek())
       min = newTop;
     return min;
   }
-  */
+  
   
   //to sort a stack
   public static Stack problem6(Stack stack)
